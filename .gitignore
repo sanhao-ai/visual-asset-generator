@@ -1,0 +1,10 @@
+# 产物与临时文件
+node_modules/
+frames/
+*.mp4
+*.wav
+narration/
+__pycache__/
+.DS_Store
+
+# 不忽略示例与脚本（仓库自带的演示产物如需提交，用 git add -f）
