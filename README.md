@@ -50,7 +50,7 @@ bash scripts/check-env.sh
 ### QwenWork 用户
 
 ```bash
-git clone https://github.com/coke830206/visual-asset-generator.git ~/.qwenworkcn/skills/visual-asset-generator
+git clone https://github.com/sanhao-ai/visual-asset-generator.git ~/.qwenworkcn/skills/visual-asset-generator
 ```
 
 重启 QwenWork 后说"视觉素材生成"即可触发。
@@ -58,7 +58,7 @@ git clone https://github.com/coke830206/visual-asset-generator.git ~/.qwenworkcn
 ### Claude Code 用户
 
 ```bash
-git clone https://github.com/coke830206/visual-asset-generator.git ~/.claude/skills/visual-asset-generator
+git clone https://github.com/sanhao-ai/visual-asset-generator.git ~/.claude/skills/visual-asset-generator
 ```
 
 其他兼容 SKILL.md 规范的 Agent（Cursor 等）同理：clone 到各自的 skills 目录。
