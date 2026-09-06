@@ -85,9 +85,11 @@ else
 fi
 
 # Resolve output to absolute path
+# 重要：脚本稍后会 cd 进临时目录安装 Playwright，若这里是相对路径，
+# PDF 会被写进临时目录并随清理一起消失，而脚本仍提示"导出成功"。
 OUTPUT_DIR=$(dirname "$OUTPUT_PDF")
 mkdir -p "$OUTPUT_DIR"
-OUTPUT_PDF="$OUTPUT_DIR/$(basename "$OUTPUT_PDF")"
+OUTPUT_PDF="$(cd "$OUTPUT_DIR" && pwd)/$(basename "$OUTPUT_PDF")"
 
 echo ""
 echo -e "${BOLD}╔══════════════════════════════════════╗${NC}"
